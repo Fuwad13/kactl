@@ -1,3 +1,22 @@
-alias c='g++ -Wall -Wconversion -Wfatal-errors -g -std=c++17 \
-	-fsanitize=undefined,address'
-xmodmap -e 'clear lock' -e 'keycode 66=less greater' #caps = <>
+alias cpsan='g++ \
+	-std=gnu++17 \
+	-DLOCAL \
+	-pedantic \
+	-Wall \
+	-Wextra \
+	-Wconversion \
+	-Wshadow \
+	-Wfloat-equal \
+	-Wmisleading-indentation \
+	-Wimplicit-fallthrough \
+	-Wlogical-op \
+	-Wduplicated-cond \
+	-Wduplicated-branches \
+	-Wuseless-cast \
+	-Wno-sign-conversion \
+	-Wno-unused-const-variable \
+	-D_GLIBCXX_DEBUG \
+	-ggdb3 \
+	-fno-omit-frame-pointer \
+	-fsanitize=undefined,float-divide-by-zero,float-cast-overflow,address \
+'
