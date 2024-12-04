@@ -14,11 +14,11 @@ vector<array<int, 4>> queries; // {l/B, r, l, id}
 sort(all(queries));
 int left = 0, right = -1;
 for(auto [_, r, l, id, k]: queries){
-    while(right < r) add(++right);
-    while(right > r) remove(right--);
-    while(left < l) remove(left++);
-    while(left > l) add(--left);
-    ans[id] = get(k);
+	while(right < r) add(++right);
+	while(right > r) remove(right--);
+	while(left < l) remove(left++);
+	while(left > l) add(--left);
+	ans[id] = get(k);
 }
 
  
