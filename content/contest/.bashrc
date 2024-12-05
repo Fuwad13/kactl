@@ -18,5 +18,4 @@ alias cpsan='g++ \
 	-D_GLIBCXX_DEBUG \
 	-ggdb3 \
 	-fno-omit-frame-pointer \
-	-fsanitize=undefined,float-divide-by-zero,float-cast-overflow,address \
-'
+	-fsanitize=undefined,float-divide-by-zero,float-cast-overflow,address'

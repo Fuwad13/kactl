@@ -1,0 +1,8 @@
+! map Shift+Shift to CapsLock
+keysym Shift_L = Shift_L Caps_Lock Shift_L
+keysym Shift_R = Shift_R Caps_Lock Shift_R
+
+! map CapsLock to Ctrl
+keysym Caps_Lock = Control_L
+add control = Control_L
+remove lock = Caps_Lock

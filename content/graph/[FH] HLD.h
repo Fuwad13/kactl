@@ -3,9 +3,9 @@
  * Date: 2024-12-03
  * License: CC0
  * Source: Amar Matha
- * Description: Heavy Light Decomposition. Bounds are inclusive.must include segment tree.
- * useful for path queries and updates. can be used for subtree queries and updates too.
- * call decompose with the necessary functions and identities.
+ * Description: Heavy Light Decomposition. Bounds are inclusive.
+ * Useful for path queries and updates. Can be used for subtree queries and updates too.
+ * Call decompose with the necessary functions and identities.
  * Time: O((\log N)^2)
  * Status: stress-tested against old HLD
  */
